@@ -21,8 +21,8 @@ Route::get('saludo',function(){
     return view('saludo');
 });*/
 /*para la vista layout/ejemplo1*/
-Route::get('saludo',function(){
-    return view('layout.ejemplo1');
+Route::get('/saludo',function(){
+    return view('saludo');
 });
 
 
@@ -37,12 +37,18 @@ Route::get('contacto/{nombre?}/{edad?}',function($nombre="No se envio un nombre"
                                 ));
 }); */
 /*paraenviar parametro utilizando with*/
-Route::get('contacto/{nombre?}/{edad?}',function($nombre="No se envio un nombre",$edad="no se envio la edad"){
+Route::get('/contacto/{nombre?}/{edad?}',function($nombre="Jose Lopèz",$edad="5 años"){
     return view('contacto')
     ->with("nombre",$nombre)
     ->with("edad",$edad);
 });
-/*Vistacon bootstrap */
-Route::get('base',function(){
-    return view('base');
+/*Vista con bootstrap */
+
+
+Route::get('/servicio',function(){
+    return view('servicios');
+});
+
+Route::get('/nosotros',function(){
+    return view('nosotros');
 });

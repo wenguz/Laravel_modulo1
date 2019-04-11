@@ -85,6 +85,11 @@
                 </div>
 
                 <div class="links">
+                    <a href="{{ url('/saludo') }}">Inicio</a>
+                    <a href="{{ url('/nosotros') }}">Nosotros</a>
+                    <a href="{{ url('/contacto') }}">Contacto</a>
+                    <a href="{{ url('/servicio') }}">Servicios</a>
+
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>

@@ -1,2 +1,38 @@
-<h1>Hola</h1>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta dolor culpa ex pariatur quisquam maiores quasi ut perferendis recusandae, laboriosam voluptas beatae, dolores dignissimos eum maxime corporis fuga soluta vel aperiam porro autem blanditiis repellendus. Quae, iste! Perferendis suscipit est numquam voluptatum voluptatem voluptate molestiae natus, repellendus culpa praesentium ex assumenda quia eveniet vero adipisci eum. Tenetur adipisci ullam dolore quos! Quas dolor esse quisquam, necessitatibus perspiciatis laudantium earum consequatur voluptas nisi maxime! Ab libero commodi sunt nam nihil. Doloremque!</p>
+{{--ANIDARPLANTILLAS--}}
+@include('layout.base')
+
+<div class="container">
+	<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+		<h3>BIENVENIDO !!!</h3>
+	</div>
+	<div class="row card-deck mb-3 text-center">
+		<!--cada fila debe tener 12 colum.Siquiero generar 3 columnas sera.-->
+		<div class="col-md-4">
+			<div class="card-header">
+				<h4 class="my-0 font-weight-normal">Columna 1</h4>
+			</div>
+			<div class="card-body bg-info text-light">
+				<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, cumque adipisci architecto id corporis porro soluta earum quia praesentium unde temporibus, voluptates sed odit recusandae culpa modi ad minus! Sint.</p>
+			</div>
+		</div>
+		<div class="col-md-4 ">
+			<div class="card-header">
+				<h4 class="my-0 font-weight-normal">Columna 2</h4>
+			</div>
+			<!--con la clasese adapta una imagengrande-->
+			<div class="card-body bg-secondary ">
+				<p><img src="images/fondo1.jpg" class="img-fluid"></p>
+                <!--Otraforma decargar archivos cuandose tiene muchos.Cuando setiene el archivodentro del proyecto
+                	<p><img src={{asset('images/fondo1.jpg')}} class="img-fluid"></p>-->
+                </div>
+            </div>
+            <div class="col-md-4  ">
+            	<div class="card-header">
+            		<h4 class="my-0 font-weight-normal">Columna 3</h4>
+            	</div>
+            	<div class="card-body bg-info text-light">
+            		<p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe nisi quas perferendis officia quidem reiciendis temporibus, eum fugiat aliquid unde.</p>
+            	</div>
+            </div>
+        </div>
+    </div>
