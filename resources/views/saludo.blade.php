@@ -1,6 +1,6 @@
 {{--ANIDARPLANTILLAS--}}
 @extends('layout.base')
-@section('servicio','Servicio')
+@section('servicio','SERVICIO')
 @section('contenido')
 
 <div class="container">

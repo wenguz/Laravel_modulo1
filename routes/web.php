@@ -44,12 +44,17 @@ Route::get('/contacto/{nombre?}/{edad?}',function($nombre="Jose Lopèz",$edad="5
 });*/
 
 /*Vista con bootstrap */
-Route::get('/servicio',function(){
+/*
+Route::get('servicio',function(){
     return view('servicios');
-});
+});*/
 
-Route::get('/nosotros',function(){
+Route::get('nosotros',function(){
     return view('nosotros');
 });
 //Ruta para vista con controlador
 Route::get('contacto','ContactoController@mostrarcontacto');
+
+Route::get('servicio','ServicioController@mostrarServicio');
+
+Route::get('nosotros','NosotrosController@mostrarNosotros');
