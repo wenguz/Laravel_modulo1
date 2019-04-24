@@ -17,7 +17,7 @@
         <nav>
             <div class="nav nav-tabs " id="nav-tab" role="tablist">
                 <a class="nav-item nav-link" role="tab" aria-selected="true" href="./saludo">INICIO</a>
-                <a class="nav-item nav-link" role="tab" aria-selected="false" href="./servicio">SERVICIOS</a>
+                <a class="nav-item nav-link" role="tab" aria-selected="false" href="./servicio">@yield('servicio')</a>
                 <a class="nav-item nav-link" role="tab" aria-selected="false"  href="./nosotros">NOSOTROS</a>
                 <a class="nav-item nav-link" role="tab" aria-selected="false" href="./contacto">CONTACTO</a>
             </div>

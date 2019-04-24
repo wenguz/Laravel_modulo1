@@ -1,6 +1,6 @@
 {{--ANIDARPLANTILLAS--}}
 @extends('layout.base')
-
+@section('servicio','Servicio')
 @section('contenido')
 <!--https://getbootstrap.com/docs/4.3/examples/-->
 <div class="container">
