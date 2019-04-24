@@ -23,6 +23,10 @@
             </div>
         </nav>
     </div>
+    <div>
+        @section('contenido')
+        @show
+    </div>
 
 
 
