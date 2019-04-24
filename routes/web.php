@@ -36,15 +36,14 @@ Route::get('contacto/{nombre?}/{edad?}',function($nombre="No se envio un nombre"
                                   "edad"=>$edad
                                 ));
 }); */
-/*paraenviar parametro utilizando with*/
+/*paraenviar parametro utilizando with
 Route::get('/contacto/{nombre?}/{edad?}',function($nombre="Jose Lopèz",$edad="5 años"){
     return view('contacto')
     ->with("nombre",$nombre)
     ->with("edad",$edad);
-});
+});*/
+
 /*Vista con bootstrap */
-
-
 Route::get('/servicio',function(){
     return view('servicios');
 });
@@ -52,3 +51,5 @@ Route::get('/servicio',function(){
 Route::get('/nosotros',function(){
     return view('nosotros');
 });
+//Ruta para vista con controlador
+Route::get('contacto','ContactoController@mostrarcontacto');
