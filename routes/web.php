@@ -58,3 +58,6 @@ Route::get('contacto','ContactoController@mostrarcontacto');
 Route::get('servicio','ServicioController@mostrarServicio');
 
 Route::get('nosotros','NosotrosController@mostrarNosotros');
+
+Route::get('agregarlibro','LibrosController@agregarLibro');
+Route::post('guardarlibro','LibrosController@guardarLibro');
