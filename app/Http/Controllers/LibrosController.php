@@ -26,12 +26,18 @@ class LibrosController extends Controller
            //verificar si la variable de consulta esta llena
              if(!empty($res)){
             //direccionamiento con actionpara llamar una funcion
-            return redirect()->action('LibrosControler@listadoLibros')->with('mensaje','Registro Realizado');
+            return redirect()->action('LibrosController@listadoLibros')->with('mensaje','Registro Realizado');
         	}
     }
     public function listadoLibros(){
         $listado=DB::table('libros')
         ->get(); //metodo get es como hacer un select
         return view('libros/listado',array('biblioteca'=>$listado));
+    }
+    public function eliminarLibros($id){
+        $el=DB::table('libros')->where('id',$id)->delete();
+        if(!empty($el)){
+            return redirect()->action('LibrosController@listadoLibros')->with('mensaje','eliminacion Realizada');
+        }
     }
 }

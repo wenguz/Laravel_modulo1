@@ -62,3 +62,4 @@ Route::get('nosotros','NosotrosController@mostrarNosotros');
 Route::get('agregarlibro','LibrosController@agregarLibro');
 Route::post('guardarlibro','LibrosController@guardarLibro');
 Route::get('listado','LibrosController@listadoLibros');
+Route::get('eliminarlibro/{id}','LibrosController@eliminarLibros');
