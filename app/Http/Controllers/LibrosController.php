@@ -24,6 +24,14 @@ class LibrosController extends Controller
                 'cantidad'=>$request->input('cantidad'),
             ));
            //verificar si la variable de consulta esta llena
-
+             if(!empty($res)){
+            //direccionamiento con actionpara llamar una funcion
+            return redirect()->action('LibrosControler@listadoLibros')->with('mensaje','Registro Realizado');
+        	}
+    }
+    public function listadoLibros(){
+        $listado=DB::table('libros')
+        ->get(); //metodo get es como hacer un select
+        return view('libros/listado',array('biblioteca'=>$listado));
     }
 }
